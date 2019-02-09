@@ -1,5 +1,7 @@
 # CryptoSoccer
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/34b094f8f6f449d1ba2d636bc18e4e4b)](https://app.codacy.com/app/rtre84/crypto-soccer?utm_source=github.com&utm_medium=referral&utm_content=rtre84/crypto-soccer&utm_campaign=Badge_Grade_Dashboard)
+
 Work in Progress.  
 
 ## 💡[Document](./DOCUMENT.md)
