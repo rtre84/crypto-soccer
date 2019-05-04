@@ -58,15 +58,14 @@ contract SoccerCoin is Ownable, ERC721 {
     _mint(_to, id);
   }
 
-//   function transfer(address _to, uint _tokenId) public ownerOf(_tokenId) {
-  function transfer(address _to, uint _tokenId) external {
+  function transfer(address _to, uint _tokenId) public ownerOf(_tokenId) {
     require(_to != address(0));
 
     playerToUser[_tokenId] = _to;
     transferFrom(msg.sender, _to, _tokenId);
   }
 
-  function approve(address _to, uint _tokenId) public {
+  function approve(address _to, uint _tokenId) public ownerOf(_tokenId) {
     require(_to != address(0));
 
     playerToApproved[_tokenId] = _to;
